@@ -5,9 +5,9 @@
         public decimal Valor { get; set; }
 
 
-        public virtual void ProcessarPagamento(decimal pagamento)
+        public virtual string ProcessarPagamento(decimal pagamento)
         {
-            Console.WriteLine($"Processando pagamento de R${pagamento}");
+            return ($"Processando pagamento de R${pagamento}");
         }
 
     }

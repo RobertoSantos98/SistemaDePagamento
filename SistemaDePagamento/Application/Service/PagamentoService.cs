@@ -17,7 +17,7 @@ namespace SistemaDePagamento.Application.Service
             };
 
             resposta.TipoDePagamento = tipoDePagamento;
-            resposta.Message = "Pagamento feito com sucesso!";
+            resposta.Message = pagamento.ProcessarPagamento(valor);
             resposta.Success = true;
             resposta.Valor = valor;
 

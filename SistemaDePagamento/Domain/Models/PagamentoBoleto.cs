@@ -7,10 +7,10 @@
             Valor = valor;
         }
 
-        public override void ProcessarPagamento(decimal valor)
+        public override string ProcessarPagamento(decimal valor)
         {
             Console.WriteLine($"Processando pagamento de boleto no valor de R${valor}");
-            Console.WriteLine("Boleto gerado com sucesso!");
+            return ("Boleto gerado com sucesso!");
         }
 
     }

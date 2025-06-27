@@ -2,6 +2,6 @@
 {
     public interface IPagamento
     {
-        public void ProcessarPagamento(decimal valor);
+        public string ProcessarPagamento(decimal valor);
     }
 }

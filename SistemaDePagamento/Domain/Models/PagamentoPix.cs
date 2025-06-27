@@ -10,9 +10,9 @@
             Valor = valor;
             ChavePix = chavePix;
         }
-        public override void ProcessarPagamento(decimal valor)
+        public override string ProcessarPagamento(decimal valor)
         {
-            Console.WriteLine($"Processando pagamento via Pix no valor de R${valor}");
+            return ($"Processando pagamento via Pix no valor de R${valor}");
         }
     }
 }

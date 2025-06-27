@@ -17,7 +17,7 @@ namespace SistemaDePagamento.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EfetuarPagamento(PagamentoDTO pagamento)
+        public async Task<IActionResult> EfetuarPagamento([FromBody] PagamentoDTO pagamento)
         {
             var response = await _pagamentoService.ProcessarPagamentoAsync(pagamento.tipoDePagamento, pagamento.valor);
 

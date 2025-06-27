@@ -9,9 +9,9 @@
             Valor = valor;
             NumeroCartao = numeroCartao;
         }
-        public override void ProcessarPagamento(decimal valor)
+        public override string ProcessarPagamento(decimal valor)
         {
-            Console.WriteLine($"Processando pagamento com cartão no valor de R${valor}");
+            return $"Processando pagamento com cartão no valor de R${valor}";
         }
     }
 }
